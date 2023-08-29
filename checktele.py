@@ -290,7 +290,7 @@ async def _(event):
 async def _(event):
     try:
     	await sython(functions.channels.JoinChannelRequest(
-    	channel='MAX985'
+    	channel='FF7FS'
     	))
     except:
     	pass
@@ -332,12 +332,11 @@ async def _(event):
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''تم الصيد (@{username})
 ꩜ 𝙼𝙰𝚇 ↬  {trys}
-lD: @P8_PP = @Max985 
-𝚂𝙾𝚄𝚁𝙲𝙴 𝙼𝙰𝚇 : @FCF303  ''')
-                    await event.client.send_message("@i_R_Y", f''' ⌲ تم الصيد (@{username})
+lD: تم رسال الصيد المجموعة المطور''')
+                    await event.client.send_message("@sxxcsccsbot", f''' ⌲ تم الصيد (@{username})
 ꩜ 𝙼𝙰𝚇 ↬  {trys}
-lD: @P8_PP = @Max985 
-𝚂𝙾𝚄𝚁𝙲𝙴 𝙼𝙰𝚇 : @FCF303  ''')
+lD: @P8_PP 
+𝚂𝙾𝚄𝚁𝙲𝙴 𝙼𝙰𝚇 : @MAX985 ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
@@ -345,7 +344,7 @@ lD: @P8_PP = @Max985
                 except Exception as eee:
                     try:
                     	await sython.send_message("sxxcsccsbot","/start")
-                    	await sython.send_message("sxxcsccsbot",f"ֆ ɴᴇᴡ ᴜsᴇʀɴᴀᴍᴇ ғʟᴏᴏᴅ ⚚ \n\n↬ ᴜsᴇʀɴᴀᴍᴇ : @{username}\n\n sᴇɴᴅ : `/us @{username}`")
+                    	await sython.send_message("sxxcsccsbot",f"خاصيه اليوزر : @{username}")
                     except Exception as wE:
                     	await sython.send_message(event.chat.id , "FLood User : @{username}\n\nError : {wE}")
                     	pass
@@ -355,7 +354,7 @@ lD: @P8_PP = @Max985
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await sython.send_message(event.chat.id, "New UserName Available !")
+                        await sython.send_message(event.chat.id, "تم ارسال خاصيه في المجموعه!!")
             else:
                 pass
             trys += 1
@@ -363,7 +362,7 @@ lD: @P8_PP = @Max985
         isclaim.clear()
         isclaim.append("off")
         trys = ""
-        await event.client.send_message(event.chat_id, "↬ sᴛᴏp ᴄʜᴇᴄᴋᴇʀ")
+        await event.client.send_message(event.chat_id, "تم الانتهاء من الصيد!!")
         
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
