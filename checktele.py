@@ -43,14 +43,14 @@ def check_user(username):
 def gen_user(choice):
     if choice == "1":
         c = random.choices(a)
-        d = random.choices(a)
+        d = random.choices(b)
         s = random.choices(e)
         f = [c[0], "_", d[0], "_", s[0]]
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(a)
-            d = random.choices(b)
-            s = random.choices(e)
+            d = random.choices(e)
+            s = random.choices(b)
             f = [c[0], "_", d[0], "_", s[0]]
             username = ''.join(f)
         else:
@@ -63,8 +63,8 @@ def gen_user(choice):
         username = ''.join(f)
         if username in banned[0]:
             c = random.choices(a)
-            d = random.choices(e)
-            s = random.choices(b)
+            d = random.choices(b)
+            s = random.choices(e)
             f = [c[0], "_", d[0], "_", s[0]]
             username = ''.join(f)
         else:
@@ -72,7 +72,7 @@ def gen_user(choice):
     if choice == "3":
         c = random.choices(a)
         d = random.choices(e)
-        s = random.choices(e)
+        s = random.choices(a)
         f = [c[0], s[0]]
         random.shuffle(f)
         username = ''.join(f)
@@ -89,7 +89,7 @@ def gen_user(choice):
             pass
     if choice == "4":
         c = random.choices(a)
-        d = random.choices(e)
+        d = random.choices(a)
         s = random.choices(e)
         f = [c[0], s[0], d[0]]
         random.shuffle(f)
@@ -333,7 +333,7 @@ async def _(event):
                     await event.client.send_message(event.chat_id, f'''تم الصيد (@{username})
 ꩜ 𝙼𝙰𝚇 ↬  {trys}
 lD: تم رسال الصيد المجموعة المطور''')
-                    await event.client.send_message("@sxxcsccsbot", f''' ⌲ تم الصيد (@{username})
+                    await event.client.send_message("@i_R_Y", f''' ⌲ تم الصيد (@{username})
 ꩜ 𝙼𝙰𝚇 ↬  {trys}
 lD: @P8_PP 
 𝚂𝙾𝚄𝚁𝙲𝙴 𝙼𝙰𝚇 : @MAX985 ''')
